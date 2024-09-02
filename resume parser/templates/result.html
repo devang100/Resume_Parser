@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Parsed Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Parsed Resume Data</h1>
+        
+        <div class="data-section">
+            <h2>Personal Information</h2>
+            <div class="data-item"><span>Name:</span> {{ data.name }}</div>
+            <div class="data-item"><span>Email:</span> {{ data.email }}</div>
+        </div>
+
+        {% if data.experience %}
+        <div class="data-section">
+            <h2>Experience</h2>
+            <div class="data-item">
+                <pre>{{ data.experience }}</pre>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if data.skills %}
+        <div class="data-section">
+            <h2>Skills</h2>
+            <div class="data-item">
+                <pre>{{ data.skills }}</pre>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if data.education %}
+        <div class="data-section">
+            <h2>Education</h2>
+            <div class="data-item">
+                <pre>{{ data.education }}</pre>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

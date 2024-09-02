@@ -1,0 +1,64 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0; /* Light gray background for body */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* White background for content */
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+    margin: 2em;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #333333;
+    text-align: center;
+}
+
+.data-section {
+    margin-top: 2em;
+}
+
+.data-section h2 {
+    font-size: 1.8em;
+    color: #007bff; /* Blue color for headings */
+    border-bottom: 2px solid #007bff; /* Blue border bottom for headings */
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+.data-item {
+    margin-bottom: 1em;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+.data-item span {
+    font-weight: bold;
+    color: #007bff; /* Blue color for span text */
+}
+
+pre {
+    background-color: #f7f7f7; /* Light gray background for preformatted text */
+    padding: 1em;
+    border-radius: 5px;
+    white-space: pre-wrap; /* Allows text to wrap */
+    word-wrap: break-word; /* Prevents long words from breaking layout */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+    color: #333333; /* Dark gray text color */
+}

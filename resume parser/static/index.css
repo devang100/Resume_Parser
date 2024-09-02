@@ -1,0 +1,101 @@
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'); /* Font Awesome for icons */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #43cea2, #185a9d); /* Gradient background */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    max-width: 500px;
+    width: 100%;
+    margin: 2em;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    margin-bottom: 1em;
+    font-size: 3.5em; /* Larger font size for title */
+    color: #ffffff; /* White color for title */
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Text shadow for better contrast */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.file-upload {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload .file-label {
+    display: inline-block;
+    background-color: #3498db; /* Blue color for file upload button */
+    color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload .file-label i {
+    margin-right: 0.5em;
+}
+
+.file-upload .file-label:hover {
+    background-color: #2980b9; /* Darker shade of blue on hover */
+}
+
+.btn {
+    background-color: #e74c3c; /* Red color for submit button */
+    color: #ffffff;
+    padding: 1em 2em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #c0392b; /* Darker shade of red on hover */
+}
